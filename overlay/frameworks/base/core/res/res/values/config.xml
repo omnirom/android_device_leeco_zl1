@@ -44,13 +44,22 @@
          Zone N + 1     array[N] <= LUX < infinity
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>1</item>
-        <item>4</item>
-        <item>45</item>
-        <item>1025</item>
-        <item>1480</item>
-        <item>2940</item>
-        <item>10000</item>
+        <item>1</item>        <!-- pitch black -->
+        <item>2</item>
+        <item>5</item>
+        <item>7</item>
+        <item>10</item>       <!-- twilight -->
+        <item>20</item>       <!-- dim indoor -->
+        <item>30</item>      <!-- home -->
+        <item>38</item>
+        <item>50</item>      <!-- office -->
+        <item>100</item>      <!-- sunrise -->
+        <item>175</item>
+        <item>300</item>     <!-- overcast -->
+        <item>1000</item>
+        <item>2000</item>
+        <item>3500</item>    <!-- daylight -->
+        <item>7500</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -58,13 +67,22 @@
          than the size of the config_autoBrightnessLevels array.
          This must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>3</item>
-        <item>7</item>
-        <item>11</item>
-        <item>26</item>
-        <item>60</item>
-        <item>108</item>
-        <item>175</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>12</item>
+        <item>17</item>
+        <item>22</item>
+        <item>29</item>
+        <item>35</item>
+        <item>55</item>
+        <item>80</item>
+        <item>98</item>
+        <item>127</item>
+        <item>155</item>
+        <item>189</item>
+        <item>209</item>
+        <item>235</item>
         <item>255</item>
     </integer-array>
 
@@ -94,7 +112,7 @@
     <!-- Screen brightness used to dim the screen when the user activity
          timeout expires.  May be less than the minimum allowed brightness setting
          that can be set by the user. -->
-    <integer name="config_screenBrightnessDim">6</integer>
+    <integer name="config_screenBrightnessDim">2</integer>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
