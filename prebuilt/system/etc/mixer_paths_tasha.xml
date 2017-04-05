@@ -2363,7 +2363,7 @@
         <ctl name="Amp Volume Location" value="0" />
         -->
         <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="66" />
+        <ctl name="Digital Gain" value="86" />
         <ctl name="Left Channel Enable" value="0" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
