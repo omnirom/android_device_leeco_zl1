@@ -142,6 +142,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8996 \
+    libloc_eng \
     libgnsspps \
     libcurl
 
