@@ -107,10 +107,10 @@ ro.qc.sdk.audio.ssr=false
 persist.audio.ssr.3mic=false
 
 ##fluencetype can be "fluence" or "fluencepro" or "none"
-ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.audio.fluencetype=fluencepro
 persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=true
-persist.audio.fluence.speaker=true
+persist.audio.fluence.speaker=false
 
 #system prop for RmNet Data
 persist.rmnet.data.enable=true

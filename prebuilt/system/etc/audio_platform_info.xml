@@ -61,58 +61,16 @@
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" acdb_id="101"/>
 
         <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="34"/>  <!-- SND_DEVICE_IN_HANDSET_MIC_NS / Stock: 101-->
-        <device name="SND_DEVICE_IN_HANDSET_MIC_NS" acdb_id="34"/>
         <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" acdb_id="4"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC" acdb_id="106"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC" acdb_id="107"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_NS" acdb_id="108"/>
-        <device name="SND_DEVICE_IN_HANDSET_DMIC_AEC_NS" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC" acdb_id="109"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC" acdb_id="110"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC_NS" acdb_id="111"/>
-        <device name="SND_DEVICE_IN_SPEAKER_MIC_AEC_NS" acdb_id="11"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC" acdb_id="113"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC" acdb_id="114"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS" acdb_id="114"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS" acdb_id="43"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC" acdb_id="115"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_FLUENCE" acdb_id="117"/>
         <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_VOICE_HEADSET_MIC" acdb_id="47"/>
-        <device name="SND_DEVICE_IN_HDMI_MIC" acdb_id="8"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB" acdb_id="4"/>
-        <device name="SND_DEVICE_IN_BT_SCO_MIC_WB_NREC" acdb_id="122"/>
-        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="21"/>
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_QMIC" acdb_id="52"/>
-        <device name="SND_DEVICE_IN_VOICE_TTY_FULL_HEADSET_MIC" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_VOICE_TTY_VCO_HANDSET_MIC" acdb_id="43"/>
-        <device name="SND_DEVICE_IN_VOICE_TTY_HCO_HEADSET_MIC" acdb_id="19"/>
         <device name="SND_DEVICE_IN_VOICE_REC_MIC" acdb_id="16"/>
-        <device name="SND_DEVICE_IN_VOICE_REC_MIC_NS" acdb_id="16"/>
-        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_STEREO" acdb_id="40"/>
-        <device name="SND_DEVICE_IN_VOICE_REC_DMIC_FLUENCE" acdb_id="40"/>
-        <device name="SND_DEVICE_IN_USB_HEADSET_MIC" acdb_id="52"/>
-        <device name="SND_DEVICE_IN_AANC_HANDSET_MIC" acdb_id="41"/>
-        <device name="SND_DEVICE_IN_VOICE_FLUENCE_DMIC_AANC" acdb_id="44"/>
-        <device name="SND_DEVICE_IN_QUAD_MIC" acdb_id="44"/>
-        <device name="SND_DEVICE_IN_SPEAKER_STEREO_DMIC" acdb_id="105"/>
-        <device name="SND_DEVICE_IN_CAPTURE_VI_FEEDBACK" acdb_id="46"/>
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC_BROADSIDE" acdb_id="51"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_BROADSIDE" acdb_id="54"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_BROADSIDE" acdb_id="102"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_NS_BROADSIDE" acdb_id="12"/>
-        <device name="SND_DEVICE_IN_SPEAKER_DMIC_AEC_NS_BROADSIDE" acdb_id="12"/>
-        <device name="SND_DEVICE_IN_HANDSET_QMIC" acdb_id="119"/>
-        <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC" acdb_id="121"/>
-        <device name="SND_DEVICE_IN_SPEAKER_QMIC_NS" acdb_id="120"/>
-        <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC_NS" acdb_id="105"/>
+        <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" acdb_id="8"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="8"/>
+        <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="8"/>
     </acdb_ids>
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
     </bit_width_configs>
-    <native_configs>
-        <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
-    </native_configs>
 
     <backend_names>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa" />
@@ -125,8 +83,14 @@
     </backend_names>
 
     <device_names>
+        <!-- Output devices -->
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-vbat" />
         <!-- Input devices -->
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-dmic-ef-fluence" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC" alias="voice-dmic-ef" />
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-mic" />
+        <device name="SND_DEVICE_IN_HANDSET_MIC_AEC_NS" alias="voice-dmic-ef" />
+        <device name="SND_DEVICE_IN_VOICE_REC_MIC" alias="voice-rec-dmic-ef-fluence" />
+        <device name="SND_DEVICE_IN_VOICE_REC_QMIC_FLUENCE" alias="voice-dmic-ef" />
     </device_names>
 
     <config_params>
