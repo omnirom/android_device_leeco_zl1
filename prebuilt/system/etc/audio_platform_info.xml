@@ -110,9 +110,6 @@
     <bit_width_configs>
         <device name="SND_DEVICE_OUT_SPEAKER" bit_width="24"/>
     </bit_width_configs>
-    <native_configs>
-        <feature name="NATIVE_AUDIO_44.1" codec_support="1"/>
-    </native_configs>
 
     <backend_names>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="smartpa" />
@@ -125,8 +122,10 @@
     </backend_names>
 
     <device_names>
+        <!-- Output devices -->
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" alias="voice-speaker-stereo-brigtness" />
         <!-- Input devices -->
-        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-dmic-ef-fluence" />
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_MIC" alias="voice-speaker-stereo-mic" />
     </device_names>
 
     <config_params>
@@ -136,7 +135,7 @@
         <!-- followed by perf lock options                             -->
         <param key="native_audio_mode" value="src"/>
         <param key="input_mic_max_count" value="4"/>
-        <param key="perf_lock_opts" value="2, 0x101, 0x20F"/>
+        <param key="perf_lock_opts" value="4, 0x101, 0x704, 0x20F, 0x1E01"/>
     </config_params>
 </audio_platform_info>
 
