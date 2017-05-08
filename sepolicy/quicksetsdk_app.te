@@ -1,0 +1,7 @@
+type quicksetsdk_app, domain;
+app_domain(quicksetsdk_app)
+allow quicksetsdk_app activity_service:service_manager find;
+allow quicksetsdk_app app_data_file:file execute;
+allow quicksetsdk_app connectivity_service:service_manager find;
+allow quicksetsdk_app display_service:service_manager find;
+allow quicksetsdk_app network_management_service:service_manager find;
