@@ -1,0 +1,2 @@
+allow platform_app app_data_file:dir search;
+allow platform_app sysfs_ir_enable:file write;
