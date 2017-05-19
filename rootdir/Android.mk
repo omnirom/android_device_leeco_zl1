@@ -43,6 +43,14 @@ LOCAL_SRC_FILES    := etc/init.qcom.sensors.sh
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := init.qcom.post_boot.sh
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_PATH  := $(TARGET_ROOT_OUT)
+LOCAL_SRC_FILES    := etc/init.qcom.post_boot.sh
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE            := init.letv.usb.rc
 LOCAL_MODULE_TAGS       := optional eng
 LOCAL_MODULE_CLASS      := ETC
