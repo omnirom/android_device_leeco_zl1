@@ -148,8 +148,8 @@ void vendor_load_properties()
            property_set("ro.product.model", "LEX720");
            property_set("ro.product.name", "ZL1_CN");
            property_set("ro.product.device", "le_zl1");
-           property_set("ro.build.fingerprint", "LeEco/ZL1_CN/le_zl1:6.0.1/WAXCNFN5902303282S/letv03281232:user/release-keys");
-           property_set("ro.build.description", "le_zl1-user 6.0.1 WAXCNFN5902303282S eng.letv.20170328.122958 release-keys");
+           property_set("ro.build.description", "OnePlus3-user 7.1.1 NMF26F 37 dev-keys");
+           property_set("ro.build.fingerprint", "OnePlus/OnePlus3/OnePlus3T:7.1.1/NMF26F/04101920:user/release-keys");
         } else {
            property_set("persist.multisim.config", "NA");
            property_set("persist.radio.multisim.config", "NA");
@@ -161,8 +161,8 @@ void vendor_load_properties()
            property_set("ro.product.device", "le_zl1");
            property_set("ro.product.customize", "oversea");
            property_set("ro.com.google.clientidbase", "android-letv");
-           property_set("ro.build.fingerprint", "LeEco/ZL1_NA/le_zl1:6.0.1/WEXNAOP5802101261S/letv01261206:user/release-keys");
-           property_set("ro.build.description", "le_zl1-user 6.0.1 WEXNAOP5802101261S eng.letv.20170126.120318 release-keys");
+           property_set("ro.build.description", "OnePlus3-user 7.1.1 NMF26F 37 dev-keys");
+           property_set("ro.build.fingerprint", "OnePlus/OnePlus3/OnePlus3T:7.1.1/NMF26F/04101920:user/release-keys");
     }
     init_alarm_boot_properties();
 }
