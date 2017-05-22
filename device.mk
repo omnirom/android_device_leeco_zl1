@@ -82,7 +82,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.qcom.bt.sh \
     init.qcom.power.rc \
     qfp_boot.sh \
     init.qcom.rc \
