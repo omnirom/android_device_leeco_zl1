@@ -338,6 +338,9 @@ on boot
     chown system system /sys/remote/enable
     chmod 0666 /sys/remote/enable
 
+    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
+    chmod 0660 /sys/devices/virtual/graphics/fb0/kcal
+
 on post-fs
 
     # Link formware to /vendor/firmware
