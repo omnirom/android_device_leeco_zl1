@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2c2878ab_5e3f7648",
+        "filename": "rootdir/etc/init.qcom.usb.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 145,
+      "author": {
+        "id": 1001070
+      },
+      "writtenOn": "2017-05-24T21:11:19Z",
+      "side": 1,
+      "message": "this is probably what changes it, everything else is unnecaserry...\nprobably would be better to remove the qcom one as its more \"generic\" the vendorids are the correct one in letv.rc",
+      "revId": "87d3544f0b25dbcbb54cb18fa9703cf02bd6520c",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
