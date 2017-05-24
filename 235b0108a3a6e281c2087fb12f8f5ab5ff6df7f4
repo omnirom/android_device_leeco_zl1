@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e31e4495_a5203d94",
+        "filename": "DeviceParts/src/org/omnirom/device/DisplayCalibration.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2017-05-24T22:14:48Z",
+      "side": 1,
+      "message": "MEEP",
+      "revId": "235b0108a3a6e281c2087fb12f8f5ab5ff6df7f4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5104c355_e11d73a0",
+        "filename": "DeviceParts/src/org/omnirom/device/SeekBarPreference.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2017-05-24T22:14:48Z",
+      "side": 1,
+      "message": "call bar.setMax(maximum) here",
+      "revId": "235b0108a3a6e281c2087fb12f8f5ab5ff6df7f4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8460ad9d_c07c0ddb",
+        "filename": "DeviceParts/src/org/omnirom/device/SeekBarPreference.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2017-05-24T22:14:48Z",
+      "side": 1,
+      "message": "adding the \"\" makes no sense",
+      "revId": "235b0108a3a6e281c2087fb12f8f5ab5ff6df7f4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eb4189d2_c8663ec7",
+        "filename": "DeviceParts/src/org/omnirom/device/SeekBarPreference.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2017-05-24T22:14:48Z",
+      "side": 1,
+      "message": "adding the \"\" makes no sense",
+      "revId": "235b0108a3a6e281c2087fb12f8f5ab5ff6df7f4",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
