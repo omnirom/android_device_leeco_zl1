@@ -100,5 +100,13 @@ public class KeyHandler implements DeviceKeyHandler {
     public boolean isCameraLaunchEvent(KeyEvent event) {
         return false;
     }
+
+    @Override
+    public Intent isActivityLaunchEvent(KeyEvent event) {
+        if (event.getAction() != KeyEvent.ACTION_UP) {
+            return null;
+        }
+        return null;
+    }
 }
 
