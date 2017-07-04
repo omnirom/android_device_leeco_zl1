@@ -241,7 +241,7 @@ BOARD_USES_QCNE := true
 #keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
-PRODUCT_BOOT_JARS += com.qti.dpmframework dpmapi com.qti.location.sdk
+PRODUCT_BOOT_JARS += com.qti.dpmframework dpmapi com.qti.location.sdk org.simalliance.openmobileapi
 
 # selinux
 include device/qcom/sepolicy/sepolicy.mk
