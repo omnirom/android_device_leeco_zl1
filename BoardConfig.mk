@@ -201,6 +201,7 @@ WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm8996
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
+HEALTHD_ENABLE_TRICOLOR_LED := true
 # not really for recovery anymor... but healthd still uses it
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
