@@ -87,5 +87,11 @@
     "repository": "android_kernel_leeco_msm8996",
     "target_path": "kernel/leeco/msm8996",
     "revision": "android-7.1"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_external_json-c",
+    "target_path": "external/json-c",
+    "revision": "android-7.1"
   }
 ]
