@@ -57,6 +57,7 @@
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="smartpa-and-headphones" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="smartpa-and-usb-headphones" />
         <device name="SND_DEVICE_OUT_SPEAKER_AND_HDMI" backend="smartpa-and-hdmi" />
+        <device name="SND_DEVICE_OUT_HEADPHONES_44_1" backend="headphones-44.1" interface="SLIMBUS_5_RX" />
     </backend_names>
 
     <device_names>
@@ -68,8 +69,8 @@
     <config_params>
         <param key="spkr_1_tz_name" value="wsatz.11"/>
         <param key="spkr_2_tz_name" value="wsatz.12"/>
-        <param key="audio.nat.codec.enabled" value="false"/>
-        <param key="native_audio_mode" value="inv"/>
+        <param key="audio.nat.codec.enabled" value="true"/>
+        <param key="native_audio_mode" value="src"/>
         <param key="input_mic_max_count" value="2"/>
         <!-- In the below value string, first parameter indicates size -->
         <!-- followed by perf lock options                             -->
